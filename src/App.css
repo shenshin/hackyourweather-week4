@@ -1,0 +1,98 @@
+:root {
+  --foreground: aliceblue;
+  --background: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+p {
+  margin-bottom: 0.3rem;
+}
+a {
+  color: var(--foreground);
+}
+
+.App {
+  text-align: center;
+}
+
+.city-card {
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+  border: 1px solid var(--foreground);
+  border-radius: 5px;
+  position: relative;
+}
+
+.city-card-remove {
+  --size: 2rem;
+  line-height: 0;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  right: 0.3rem;
+  top: 0.3rem;
+  border: 0;
+  color: var(--foreground);
+  background-color: unset;
+  font-size: calc(var(--size) * 1.1);
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.city-weather-descr {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.search-form {
+  margin: 1rem auto;
+  height: 2rem;
+  width: 22rem;
+  display: flex;
+}
+.search-form input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  flex: 3;
+  border: 1px solid var(--foreground);
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+.search-form button {
+  flex: 1;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--foreground);
+  background-color: var(--background);
+  border: 1px solid var(--foreground);
+  border-radius: 5px;
+}
+
+.weather-chart {
+  margin: 1rem auto;
+  background-color: #0b0e12;
+  border: 1px solid #535353;
+}
+
+.back-button {
+  padding: 0.2rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
